@@ -6,8 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float Speed = 1f;
     public float Sensibility = 1f;
-    public float Jumpforce = 1f;
-
+    
     private Rigidbody Physics;
 
     // Start is called before the first frame update
