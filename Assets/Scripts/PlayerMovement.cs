@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float Speed = 1f;
-    public float Sensibility = 1f;
-    
+    public float Sensibility = 32f;
+
+    private float Speed = 7f;
+    private Transform Camera;    
     private Rigidbody Physics;
 
     // Start is called before the first frame update
@@ -15,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
+        Camera = transform.Find("PlayerCamera");
         Physics = GetComponent<Rigidbody>();
     }
 
@@ -24,12 +26,12 @@ public class PlayerMovement : MonoBehaviour
         // Movimiento del personaje
         float ejeX = Input.GetAxis("Horizontal");
         float ejeZ = Input.GetAxis("Vertical");
+        float rotationX = Input.GetAxis("Mouse X");
+        float rotationY = Input.GetAxis("Mouse Y");
 
         transform.Translate(new Vector3(ejeX, 0.0f, ejeZ) * Time.deltaTime * Speed);
-
-        // Rotación de la cámara
-        float rotationY = Input.GetAxis("Mouse X");
-
-        transform.Rotate(new Vector3(0, rotationY * Time.deltaTime * Sensibility, 0));
+        
+        transform.Rotate(Vector3.up * rotationX * Time.deltaTime * Sensibility);
+        Camera.Rotate(Vector3.left * rotationY * Time.deltaTime * Sensibility);
     }
 }
