@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 7d152b10fbc337341a06233c00d16c2d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - medikitPrefab: {fileID: 8286372669648863107, guid: 648b5f1a0b996624da328a26f6bb1d0b,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
