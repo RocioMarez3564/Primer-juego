@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class MedikitSpawner : MonoBehaviour
 {
-    public float timer;
+    private float timer;
+    public float time = 10f;
     public GameObject medikitPrefab;
 
     // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
-        if(timer >= 5)
+        if(timer >= time)
         {
             timer = 0;
             float x = Random.Range(-100, 100);

@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float Sensibility = 32f;
+    public float sensibility = 32f;
+    public float sensMin = -60;
+    public float sensMax = 60;
 
-    private float Speed = 7f;
+    private float speed = 7f;
     private Transform Camera;    
     private Rigidbody Physics;
 
@@ -29,9 +31,17 @@ public class PlayerMovement : MonoBehaviour
         float rotationX = Input.GetAxis("Mouse X");
         float rotationY = Input.GetAxis("Mouse Y");
 
-        transform.Translate(new Vector3(ejeX, 0.0f, ejeZ) * Time.deltaTime * Speed);
-        
-        transform.Rotate(Vector3.up * rotationX * Time.deltaTime * Sensibility);
-        Camera.Rotate(Vector3.left * rotationY * Time.deltaTime * Sensibility);
+        transform.Translate(new Vector3(ejeX, 0.0f, ejeZ) * Time.deltaTime * speed);
+
+        if(rotationY <= sensMin)
+        {
+            rotationY = sensMin;
+        }
+        if(rotationY >= sensMax)
+        {
+            rotationY = sensMax;
+        }
+        transform.Rotate(Vector3.up * rotationX * Time.deltaTime * sensibility);
+        Camera.Rotate(Vector3.left * rotationY * Time.deltaTime * sensibility);
     }
 }
