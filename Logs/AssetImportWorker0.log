@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.1/release' branch; Version is '2021.1.10f1 (b15f561b2cef) revision 11624278'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Education; OS build 19042.1110; Version 2009; 64bit' Language: 'es' Physical Memory: 3574 MB
+OS: 'Windows 8.1  (6.3.0) 64bit' Language: 'es' Physical Memory: 6612 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,29 +11,361 @@ C:\Program Files\Unity\Hub\Editor\2021.1.10f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/TOSHIBA/Primer juego
+C:/Users/Toñin/Documents/Primer-juego
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55616
-Successfully changed project path to: C:/Users/TOSHIBA/Primer juego
-C:/Users/TOSHIBA/Primer juego
+55452
+Successfully changed project path to: C:/Users/Toñin/Documents/Primer-juego
+C:/Users/Toñin/Documents/Primer-juego
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 650.38 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 222.83 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.10f1 (b15f561b2cef)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.10f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/TOSHIBA/Primer juego/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Toñin/Documents/Primer-juego/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
+d3d11: QueryInterface(IDXGIFactory5) failed (80004002).
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: AMD Radeon HD 6310 Graphics (ID=0x9802)
+    Renderer: AMD Radeon(TM) HD 8510G (ID=0x9999)
     Vendor:   ATI
-    VRAM:     373 MB
-    Driver:   15.201.1151.0
+    VRAM:     736 MB
+    Driver:   13.352.1004.0
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56632
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56092
 Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002781 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 230.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.113 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4113ms)
+		BeginReloadAssembly (133ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1324ms)
+			LoadAssemblies (129ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (502ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (93ms)
+			SetupLoadedEditorAssemblies (606ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (230ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (274ms)
+				ProcessInitializeOnLoadMethodAttributes (82ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.010866 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Toñin\Documents\Primer-juego\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Toñin\Documents\Primer-juego\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.309 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3310ms)
+		BeginReloadAssembly (400ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (56ms)
+		EndReloadAssembly (2740ms)
+			LoadAssemblies (229ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1093ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (146ms)
+			SetupLoadedEditorAssemblies (961ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (206ms)
+				ProcessInitializeOnLoadAttributes (715ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 4.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3042 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.4 MB.
+System memory in use after: 108.6 MB.
+
+Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 3475.
+Total: 7.140956 ms (FindLiveObjects: 0.709690 ms CreateObjectMapping: 0.276996 ms MarkObjects: 5.973226 ms  DeleteObjects: 0.179233 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Materials/Doctor con traje blanco modo_Hair_specular.png
+  artifactKey: Guid(12ac532bf22d54c4b89c45d834aa0652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Hair_specular.png using Guid(12ac532bf22d54c4b89c45d834aa0652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '421bd110f003ded3433b4402d7fb10cd') in 0.266425 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000576 seconds.
+  path: Assets/Materials/Doctor con traje blanco modo_Hair_normal.png
+  artifactKey: Guid(0a31b7573d037a44885eeff2a0705c7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Hair_normal.png using Guid(0a31b7573d037a44885eeff2a0705c7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bac73381853233f93e1244402eb01ddc') in 0.027357 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000497 seconds.
+  path: Assets/Materials/Doctor con traje blanco modo_Body_specular.png
+  artifactKey: Guid(4a1ecbfa154c4ed469149ef22984cc27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Body_specular.png using Guid(4a1ecbfa154c4ed469149ef22984cc27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b71628317d5f88ea1cba0055f93accfd') in 0.032362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000697 seconds.
+  path: Assets/Materials/Player skin.mat
+  artifactKey: Guid(f89f1c8624993284a9c7bd5efc5b280c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Player skin.mat using Guid(f89f1c8624993284a9c7bd5efc5b280c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de8887f99f7a3fad753c85f4c13bf023') in 0.262540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000636 seconds.
+  path: Assets/Materials/Doctor con traje blanco modo_Bottom_specular.png
+  artifactKey: Guid(5195a33bea72c8f4194bf8db4670e438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Bottom_specular.png using Guid(5195a33bea72c8f4194bf8db4670e438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5af7b5c82ec29f3dce9c3720ff23280') in 0.022106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000547 seconds.
+  path: Assets/Materials/Player Eyes.mat
+  artifactKey: Guid(d8a13881c78a4034caea5f582ccb1b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Player Eyes.mat using Guid(d8a13881c78a4034caea5f582ccb1b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c2e85dbe93c86986bc4563c04244997') in 0.024454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Materials/Doctor con traje blanco modo_Body_diffuse.png
+  artifactKey: Guid(ddb9cb3efc5c58f4592f53ff3c02b6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Body_diffuse.png using Guid(ddb9cb3efc5c58f4592f53ff3c02b6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42e54aeaf36ce73c0e9a32054463c975') in 0.032867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000812 seconds.
+  path: Assets/Materials/Doctor con traje blanco modo_Hair_diffuse.png
+  artifactKey: Guid(f03a80a5576b1724d9c622700a9e1622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Hair_diffuse.png using Guid(f03a80a5576b1724d9c622700a9e1622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95e539f8114e15deed3d8dab151135d8') in 0.027221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/Materials/Blood.mat
+  artifactKey: Guid(72d75a1013e53024c8d4916d6facfc24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Blood.mat using Guid(72d75a1013e53024c8d4916d6facfc24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '931fc571ef4d79d0c8d9b815d33f1b0d') in 0.027774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000792 seconds.
+  path: Assets/Materials/Doctor con traje blanco modo_Body_gloss.png
+  artifactKey: Guid(aea7de4abcfa0924a9636687c61d9ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Body_gloss.png using Guid(aea7de4abcfa0924a9636687c61d9ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2508bc85a8aa1f5e39a4594b9f961278') in 0.026895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000454 seconds.
+  path: Assets/Materials/Doctor con traje blanco modo_Bottom_gloss.png
+  artifactKey: Guid(30ae5227e305c0d44ba0fd080418caf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Bottom_gloss.png using Guid(30ae5227e305c0d44ba0fd080418caf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a79a6717aae1444ccd16593e82043871') in 0.023692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000543 seconds.
+  path: Assets/Materials/Player Shirt.mat
+  artifactKey: Guid(ae62bd7842844774daabb51bd52541ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Player Shirt.mat using Guid(ae62bd7842844774daabb51bd52541ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28399ed3071f00d2d3f25a941c6e158d') in 0.028479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000588 seconds.
+  path: Assets/Materials/Doctor con traje blanco modo_Bottom_diffuse.png
+  artifactKey: Guid(ec0c38b1e240e8a44bb85762e16c7170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Bottom_diffuse.png using Guid(ec0c38b1e240e8a44bb85762e16c7170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6201927dab49b451546d4ca45c32d5ef') in 0.022617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000456 seconds.
+  path: Assets/Materials/Doctor con traje blanco modo_Shoes_specular.png
+  artifactKey: Guid(3a6bee3392da8b3449072ed96ea3a0aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Shoes_specular.png using Guid(3a6bee3392da8b3449072ed96ea3a0aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a4fb578fc191fcb6a2d27953938cd96') in 0.021581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000503 seconds.
+  path: Assets/Materials/Doctor con traje blanco modo_Top_gloss.png
+  artifactKey: Guid(7f8a33f954040be488a1fa33ed62aa3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Top_gloss.png using Guid(7f8a33f954040be488a1fa33ed62aa3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '739c9ee05853c4f905e63d152412df0d') in 0.028735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000614 seconds.
+  path: Assets/Materials/Doctor con traje blanco modo_Top_normal.png
+  artifactKey: Guid(f15db48fe86188f4c905dcc15835ba1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Top_normal.png using Guid(f15db48fe86188f4c905dcc15835ba1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '851e1d2a28add6cfb74d7efceb5c2873') in 0.026986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000462 seconds.
+  path: Assets/Materials/Doctor con traje blanco modo_Top_specular.png
+  artifactKey: Guid(7aaebab8bd938e14bb254d605ecdfafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Top_specular.png using Guid(7aaebab8bd938e14bb254d605ecdfafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8287d68bd0a4237f7bbf7133c83d4273') in 0.021959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000447 seconds.
+  path: Assets/Materials/Doctor skin.mat
+  artifactKey: Guid(55aaddef59564fa46835bbf4756a36f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor skin.mat using Guid(55aaddef59564fa46835bbf4756a36f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e98da0b9404008f22281f250b012232') in 0.632753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000594 seconds.
+  path: Assets/Materials/Doctor con traje blanco modo_Shoes_normal.png
+  artifactKey: Guid(49e6edf0a5e8a0a42af1ca9a678cdcf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Shoes_normal.png using Guid(49e6edf0a5e8a0a42af1ca9a678cdcf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5365205a795e4fafd585289495087aa5') in 0.021546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Materials/Doctor con traje blanco modo_Hair_gloss.png
+  artifactKey: Guid(eb1d9ea70230c9247942ea2a62b0790f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Hair_gloss.png using Guid(eb1d9ea70230c9247942ea2a62b0790f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a61dd3cc8249782785188487b79455b') in 0.022977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000410 seconds.
+  path: Assets/Materials/Medikit.mat
+  artifactKey: Guid(7feb9fe93893e464c8352c2ea7f6634a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Medikit.mat using Guid(7feb9fe93893e464c8352c2ea7f6634a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad010954cafd3859869f69079be9d1b3') in 0.027372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/Materials/Doctor con traje blanco modo_Body_normal.png
+  artifactKey: Guid(1c9339bf64c9f0f4db5bf29833bf7840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Body_normal.png using Guid(1c9339bf64c9f0f4db5bf29833bf7840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a61a1f530fa2455500bba6e2d72ed517') in 0.047039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000447 seconds.
+  path: Assets/Materials/Doctor con traje blanco modo_Top_diffuse.png
+  artifactKey: Guid(0ed2115ba6bf5914bb59a474f289b2db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Top_diffuse.png using Guid(0ed2115ba6bf5914bb59a474f289b2db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e134a1752a34f41c6edf72eefa4ffae6') in 0.020821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000524 seconds.
+  path: Assets/Materials/Doctor con traje blanco modo_Shoes_gloss.png
+  artifactKey: Guid(59ce0a6ff90901b4bb4d372d1a05f086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Shoes_gloss.png using Guid(59ce0a6ff90901b4bb4d372d1a05f086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b00d1e9109db57b99bc8a0ae2ea9d04') in 0.021084 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000381 seconds.
+  path: Assets/Materials/Doctor con traje blanco modo_Bottom_normal.png
+  artifactKey: Guid(6c3b9264e3afd8540ab29d703ac70e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Bottom_normal.png using Guid(6c3b9264e3afd8540ab29d703ac70e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '937de29608110b119a9ad6ff7a287914') in 0.023894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000496 seconds.
+  path: Assets/Materials/Doctor con traje blanco modo_Shoes_diffuse.png
+  artifactKey: Guid(e2995c7de518c3848891a7b56d77d660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Doctor con traje blanco modo_Shoes_diffuse.png using Guid(e2995c7de518c3848891a7b56d77d660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39dad7c18f4fb4500ca6f59111277a2b') in 0.025021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.519510 seconds.
+  path: Assets/Scripts/Objects
+  artifactKey: Guid(003f353ba203de7428d6ccd5d29d287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Objects using Guid(003f353ba203de7428d6ccd5d29d287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af924ecbc7c3bee057e020d1c82f4616') in 0.021033 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011070 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Toñin\Documents\Primer-juego\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Toñin\Documents\Primer-juego\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.954 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2955ms)
+		BeginReloadAssembly (281ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (107ms)
+		EndReloadAssembly (2496ms)
+			LoadAssemblies (223ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1032ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (121ms)
+			SetupLoadedEditorAssemblies (754ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (146ms)
+				ProcessInitializeOnLoadAttributes (567ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (46ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3056 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 127.9 MB.
+System memory in use after: 128.2 MB.
+
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 3822.
+Total: 11.684543 ms (FindLiveObjects: 3.241281 ms CreateObjectMapping: 1.227474 ms MarkObjects: 7.113800 ms  DeleteObjects: 0.095350 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 30.786963 seconds.
+  path: Assets/Prefab/Items/Medikit.prefab
+  artifactKey: Guid(648b5f1a0b996624da328a26f6bb1d0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Items/Medikit.prefab using Guid(648b5f1a0b996624da328a26f6bb1d0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c93fcd1c8d75aa455113548bbefba65f') in 0.197536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.339382 seconds.
+  path: Assets/Sprites/Characters/Monstruo del hospital/Monstruo del hospital.obj
+  artifactKey: Guid(62a12fd710981334aadd55c9e853aaef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Characters/Monstruo del hospital/Monstruo del hospital.obj using Guid(62a12fd710981334aadd55c9e853aaef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b9eb5cab1b75e9729a0ee73a3b73c6') in 0.521445 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000476 seconds.
+  path: Assets/Sprites/Characters/Doctor con traje/Doctor con traje blanco modo.obj
+  artifactKey: Guid(e8af9a1664e1954488060d58f28dfe5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Characters/Doctor con traje/Doctor con traje blanco modo.obj using Guid(e8af9a1664e1954488060d58f28dfe5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fcb508eb1958e4006a3b6b920216768') in 0.277852 seconds 
