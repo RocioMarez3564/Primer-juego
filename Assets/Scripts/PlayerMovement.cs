@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float sensibility = 32f;
-    public float sensMin = -60;
-    public float sensMax = 60;
+    public Vector2 sensibility;
+    public float rotMin = -60;
+    public float rotMax = 60;
 
     private float speed = 7f;
     private Transform Camera;    
@@ -28,20 +28,21 @@ public class PlayerMovement : MonoBehaviour
         // Movimiento del personaje
         float ejeX = Input.GetAxis("Horizontal");
         float ejeZ = Input.GetAxis("Vertical");
-        float rotationX = Input.GetAxis("Mouse X");
-        float rotationY = Input.GetAxis("Mouse Y");
+        float rotationX = Input.GetAxis("Mouse X") * sensibility.x;
+        float rotationY = Input.GetAxis("Mouse Y") * sensibility.y;
 
         transform.Translate(new Vector3(ejeX, 0.0f, ejeZ) * Time.deltaTime * speed);
 
-        if(rotationY <= sensMin)
+        if(rotationX != 0)
         {
-            rotationY = sensMin;
+            transform.Rotate(Vector3.up * rotationX * Time.deltaTime);
         }
-        if(rotationY >= sensMax)
+        if(rotationY != 0)
         {
-            rotationY = sensMax;
+            float angle = (Camera.localEulerAngles.x - rotationY + 360) % 360;
+            if(angle > 180) { angle -= 360; }
+            angle = Mathf.Clamp(angle, -80, 80);
+            Camera.localEulerAngles = Vector3.right * angle;
         }
-        transform.Rotate(Vector3.up * rotationX * Time.deltaTime * sensibility);
-        Camera.Rotate(Vector3.left * rotationY * Time.deltaTime * sensibility);
     }
 }
