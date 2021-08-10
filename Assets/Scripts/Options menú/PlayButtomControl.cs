@@ -5,20 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayButtomControl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    public int nScene;
+    // cambio de escena aplicado en 
     public void ChangeScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(nScene);
     }
 }

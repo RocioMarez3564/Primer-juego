@@ -12,7 +12,7 @@ public class VolumeControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // establecer el sonido y su valor de slider en 0.5
+        // establecer el sonido y su valor predeterminado del slider en 0.5
         slider.value = PlayerPrefs.GetFloat("volumeSound", 0.5f);
         AudioListener.volume = slider.value;
     }
