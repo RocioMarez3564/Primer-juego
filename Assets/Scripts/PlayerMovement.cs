@@ -4,21 +4,28 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    // Variable de tipo Vector en 2D para la sensibilidad
     public Vector2 sensibility;
-    public float rotMin = -60;
-    public float rotMax = 60;
+    // Variables que establecen la rotacion minima y maxima de la camara
+    public float rotMin = -80;
+    public float rotMax = 80;
 
+    // Variable para la velocidad del personaje
     private float speed = 7f;
+    // Variable para guardar el Transform (posision y rotacion) de un objeto y el componente Rigidbody (fisicas) del objeto con este script
     private Transform Camera;    
     private Rigidbody Physics;
 
     // Start is called before the first frame update
     void Start()
     {
+        // Bloquea y hace invisible al cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
+        // Busca el transform de un objeto con el tag "PlayerCamera" dentro del objeto con este script
         Camera = transform.Find("PlayerCamera");
+        // Busca el componente Rigidbody del objeto con este script
         Physics = GetComponent<Rigidbody>();
     }
 
@@ -32,16 +39,20 @@ public class PlayerMovement : MonoBehaviour
         float rotationY = Input.GetAxis("Mouse Y") * sensibility.y;
 
         transform.Translate(new Vector3(ejeX, 0.0f, ejeZ) * Time.deltaTime * speed);
-
+        
+        // Si la variable rotationX es diferente a 0
         if(rotationX != 0)
         {
+            // Rota al objeto con este script y todos sus componentes en el eje y
             transform.Rotate(Vector3.up * rotationX * Time.deltaTime);
         }
+        // Si la variable rotationY es diferente a 0
         if(rotationY != 0)
         {
+            // Rota al objeto guardado en Camera delimitandolo a las variables rotMin y rotMax
             float angle = (Camera.localEulerAngles.x - rotationY + 360) % 360;
             if(angle > 180) { angle -= 360; }
-            angle = Mathf.Clamp(angle, -80, 80);
+            angle = Mathf.Clamp(angle, rotMin, rotMax);
             Camera.localEulerAngles = Vector3.right * angle;
         }
     }

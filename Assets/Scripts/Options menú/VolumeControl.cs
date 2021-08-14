@@ -5,21 +5,21 @@ using UnityEngine.UI;
 
 public class VolumeControl : MonoBehaviour
 {
-    // variables donde se almacenará el slider de volumen y su valor
+    // Variables donde se almacenará el slider de volumen y su valor
     public Slider slider;
     public float sliderValue;
 
     // Start is called before the first frame update
     void Start()
     {
-        // establecer el sonido y su valor predeterminado del slider en 0.5
+        // Establecer el sonido y su valor predeterminado del slider en 0.5
         slider.value = PlayerPrefs.GetFloat("volumeSound", 0.5f);
         AudioListener.volume = slider.value;
     }
 
     public void ChangeSlider(float val)
     {
-        // ajusta el volumen dependiendo la posicion del slider 
+        // Ajusta el volumen dependiendo la posicion del slider 
         sliderValue = val;
         PlayerPrefs.SetFloat("volumeSound", sliderValue);
         AudioListener.volume = slider.value;

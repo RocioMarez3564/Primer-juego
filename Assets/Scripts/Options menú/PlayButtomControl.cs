@@ -5,9 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayButtomControl : MonoBehaviour
 {
-    public int nScene;
-    // cambio de escena aplicado en 
-    public void ChangeScene()
+    // Cambio de escena al valor de nScene
+    public void ChangeScene(int nScene)
     {
         SceneManager.LoadScene(nScene);
     }
