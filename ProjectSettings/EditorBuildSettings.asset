@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prueba.unity
     guid: 17623534d5ffc2a479b849441ecbc79e
+  - enabled: 1
+    path: Assets/Scenes/Military Zone.unity
+    guid: d95dd53f81ca9dd43b98d72ad058ead0
+  - enabled: 1
+    path: Assets/Scenes/Map 4.unity
+    guid: 90f5004b2bcdb4742983d7cfe4239885
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity
+    guid: d963f88bb8e412043936bb9c4ddeeb9b
   m_configObjects: {}
