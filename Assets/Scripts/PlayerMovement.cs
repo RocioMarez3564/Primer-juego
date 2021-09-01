@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     // Variables que establecen la rotacion minima y maxima de la camara
     public float rotMin = -80;
     public float rotMax = 80;
+    public Joystick movJoy;
+    public Joystick camJoy;
 
     // Variable para la velocidad del personaje
     private float speed = 7f;
@@ -20,8 +22,8 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         // Bloquea y hace invisible al cursor
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
 
         // Busca el transform de un objeto con el tag "PlayerCamera" dentro del objeto con este script
         Camera = transform.Find("PlayerCamera");
@@ -33,10 +35,10 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         // Movimiento del personaje
-        float ejeX = Input.GetAxis("Horizontal");
-        float ejeZ = Input.GetAxis("Vertical");
-        float rotationX = Input.GetAxis("Mouse X") * sensibility.x;
-        float rotationY = Input.GetAxis("Mouse Y") * sensibility.y;
+        float ejeX = movJoy.Horizontal;
+        float ejeZ = movJoy.Vertical;
+        float rotationX = camJoy.Horizontal * sensibility.x;
+        float rotationY = camJoy.Vertical * sensibility.y;
 
         transform.Translate(new Vector3(ejeX, 0.0f, ejeZ) * Time.deltaTime * speed);
         
@@ -52,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
             // Rota al objeto guardado en Camera delimitandolo a las variables rotMin y rotMax
             float angle = (Camera.localEulerAngles.x - rotationY + 360) % 360;
             if(angle > 180) { angle -= 360; }
-            angle = Mathf.Clamp(angle, rotMin, rotMax);
+            angle = Mathf.Clamp(angle, -rotMax, rotMax);
             Camera.localEulerAngles = Vector3.right * angle;
         }
     }
