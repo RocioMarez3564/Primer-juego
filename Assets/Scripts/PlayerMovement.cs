@@ -11,12 +11,15 @@ public class PlayerMovement : MonoBehaviour
     public float rotMax = 80;
     public Joystick movJoy;
     public Joystick camJoy;
+    public bool crouch;
+    public bool walking;
 
     // Variable para la velocidad del personaje
     private float speed = 7f;
     // Variable para guardar el Transform (posision y rotacion) de un objeto y el componente Rigidbody (fisicas) del objeto con este script
     private Transform Camera;    
     private Rigidbody Physics;
+    private Animator Anim;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         Camera = transform.Find("PlayerCamera");
         // Busca el componente Rigidbody del objeto con este script
         Physics = GetComponent<Rigidbody>();
+        Anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -41,6 +45,18 @@ public class PlayerMovement : MonoBehaviour
         float rotationY = camJoy.Vertical * sensibility.y;
 
         transform.Translate(new Vector3(ejeX, 0.0f, ejeZ) * Time.deltaTime * speed);
+        if(movJoy.Horizontal >= 0.1)
+        {
+            walking = true;
+        }
+        else if(movJoy.Vertical >= 0.1)
+        {
+            walking = true;
+        }
+        else
+        {
+            walking = false;
+        }
         
         // Si la variable rotationX es diferente a 0
         if(rotationX != 0)
@@ -56,6 +72,22 @@ public class PlayerMovement : MonoBehaviour
             if(angle > 180) { angle -= 360; }
             angle = Mathf.Clamp(angle, -rotMax, rotMax);
             Camera.localEulerAngles = Vector3.right * angle;
+        }
+
+        //Animiaciones
+        Anim.SetBool("Crouch", crouch);
+        Anim.SetBool("Walk", walking);
+    }
+
+    public void Animations()
+    {
+        if(crouch == false)
+        {
+            crouch = true;
+        }
+        if(crouch == true)
+        {
+            crouch = false;
         }
     }
 }
