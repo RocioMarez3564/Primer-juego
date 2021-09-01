@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.1/release' branch; Version is '2021.1.10f1 (b15f561b2cef) revision 11624278'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Education; OS build 19042.1165; Version 2009; 64bit' Language: 'es' Physical Memory: 3574 MB
+OS: 'Windows 8.1  (6.3.0) 64bit' Language: 'es' Physical Memory: 6612 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,39 +11,31 @@ C:\Program Files\Unity\Hub\Editor\2021.1.10f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/TOSHIBA/Primer juego
+C:/Users/Toñin/Documents/Primer-juego
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-<<<<<<< Updated upstream
 57943
 Successfully changed project path to: C:/Users/Toñin/Documents/Primer-juego
 C:/Users/Toñin/Documents/Primer-juego
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 281.79 ms, found 3 plugins.
-=======
-49739
-Successfully changed project path to: C:/Users/TOSHIBA/Primer juego
-C:/Users/TOSHIBA/Primer juego
-Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 706.93 ms, found 3 plugins.
->>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.10f1 (b15f561b2cef)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.10f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/TOSHIBA/Primer juego/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Toñin/Documents/Primer-juego/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
+d3d11: QueryInterface(IDXGIFactory5) failed (80004002).
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: AMD Radeon HD 6310 Graphics (ID=0x9802)
+    Renderer: AMD Radeon(TM) HD 8510G (ID=0x9999)
     Vendor:   ATI
-    VRAM:     373 MB
-    Driver:   15.201.1151.0
+    VRAM:     736 MB
+    Driver:   13.352.1004.0
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.10f1/Editor/Data/MonoBleedingEdge/etc'
-<<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56852
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -463,7 +455,3 @@ Received Import Request.
   path: Assets/Scenes/Map 4.unity
   artifactKey: Guid(90f5004b2bcdb4742983d7cfe4239885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scenes/Map 4.unity using Guid(90f5004b2bcdb4742983d7cfe4239885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21800e5c879a579558d7566aa4e10de3') in 0.026152 seconds 
-=======
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56700
-Begin MonoManager ReloadAssembly
->>>>>>> Stashed changes
