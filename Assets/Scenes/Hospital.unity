@@ -704,8 +704,6 @@ MonoBehaviour:
   rotMax: 80
   movJoy: {fileID: 96014066}
   camJoy: {fileID: 1630905497}
-  crouch: 0
-  walking: 0
 --- !u!65 &366402280
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -735,6 +733,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 1
+--- !u!114 &366402282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366402277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f6620ceaba47fc4ab100253a0704a70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movJoy: {fileID: 96014066}
+  crouch: 0
+  walk: 0
 --- !u!1 &484160090
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,8 +1153,8 @@ RectTransform:
   - {fileID: 96014065}
   - {fileID: 1630905496}
   - {fileID: 1980612470}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 366402276}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1563,7 +1576,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1924956529
 PrefabInstance:
@@ -1840,13 +1853,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 366402282}
+        m_TargetAssemblyTypeName: AnimationSurvivor, Assembly-CSharp
+        m_MethodName: Animations
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
