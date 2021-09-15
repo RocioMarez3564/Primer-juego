@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     // Variables que establecen la rotacion minima y maxima de la camara
     public float rotMin = -80;
     public float rotMax = 80;
+    public float run;
+    public float runLeft;
     public Joystick movJoy;
     public Joystick camJoy;
 
@@ -17,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     // Variable para guardar el Transform (posision y rotacion) de un objeto y el componente Rigidbody (fisicas) del objeto con este script
     private Transform Camera;    
     private Rigidbody Physics;
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         Camera = transform.Find("PlayerCamera");
         // Busca el componente Rigidbody del objeto con este script
         Physics = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -57,5 +61,33 @@ public class PlayerMovement : MonoBehaviour
             angle = Mathf.Clamp(angle, -rotMax, rotMax);
             Camera.localEulerAngles = Vector3.right * angle;
         }
+
+        if(movJoy.Vertical >= 0.1)
+        {
+            run = 1;
+        }
+        else if(movJoy.Vertical <= -0.1)
+        {
+            run = -1;
+        }
+        else
+        {
+            run = 0;
+        }
+        if(movJoy.Horizontal >= 0.1)
+        {
+            runLeft = -1;
+        }
+        else if(movJoy.Horizontal <= -0.1)
+        {
+            runLeft = 1;
+        }
+        else
+        {
+            runLeft = 0;
+        }
+
+        anim.SetFloat("Run", run);
+        anim.SetFloat("RunLeft", runLeft);
     }
 }

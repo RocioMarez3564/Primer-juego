@@ -5,8 +5,8 @@ using UnityEngine;
 public class AnimationSurvivor : MonoBehaviour
 {
     public Joystick movJoy;
-    public bool crouch;
-    public bool walk;
+    public float run;
+    public float runLeft;
 
     private Animator anim;
 
@@ -19,32 +19,32 @@ public class AnimationSurvivor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(movJoy.Horizontal >= 0.1)
+        if(movJoy.Vertical >= 0.1)
         {
-            walk = true;
+            run = 1;
         }
-        else if(movJoy.Vertical >= 0.1)
+        else if(movJoy.Vertical <= -0.1)
         {
-            walk = true;
+            run = -1;
         }
         else
         {
-            walk = false;
+            run = 0;
+        }
+        if(movJoy.Horizontal >= 0.1)
+        {
+            runLeft = -1;
+        }
+        else if(movJoy.Horizontal <= -0.1)
+        {
+            runLeft = 1;
+        }
+        else
+        {
+            runLeft = 0;
         }
 
-        anim.SetBool("Crouch", crouch);
-        anim.SetBool("Walk", walk);
-    }
-
-    public void Animations()
-    {
-        if(crouch == false)
-        {
-            crouch = true;
-        }
-        if(crouch == true)
-        {
-            crouch = false;
-        }
+        anim.SetFloat("Run", run);
+        anim.SetFloat("RunLeft", runLeft);
     }
 }
